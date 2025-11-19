@@ -11,6 +11,14 @@ You will need to obtain a local copy of LLaMA weights compatible with Hugging Fa
 
 Experiments were conducted on 4 A100 GPUs.
 
+## Archivos cambiados/agregados:
+
+- coref/datasets/raw/ciudadania.csv
+- coref/datasets/capitals_es.py
+- coref/datasets&compound_capitals_es.py
+- coref/models
+- scripts/run_experiment.py
+- paper_plots_factorizability.ipynb
 
 ## Running experiments
 Run

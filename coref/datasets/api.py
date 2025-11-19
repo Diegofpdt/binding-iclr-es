@@ -1,8 +1,10 @@
 import itertools
 import coref.datasets.shapes as shapes
 import coref.datasets.capitals as capitals
+import coref.datasets.capitals_es as capitals_es
 import coref.datasets.fruits as fruits
 import coref.datasets.compound_capitals as compound_capitals
+import coref.datasets.compound_capitals_es as compound_capitals_es
 import coref.datasets.mcq_agnews as mcq_agnews
 import coref.datasets.biosbias as biosbias
 import coref.datasets.icl_sst as icl_sst
@@ -19,6 +21,7 @@ from coref.datasets.common import (
 
 VOCAB_MAP = {
     "CAPITALS": capitals.Vocab,
+    "CAPITALS_ES": capitals_es.Vocab,
     "SHAPES": shapes.Vocab,
     "FRUITS": fruits.Vocab,
     "MCQ_AGNEWS": mcq_agnews.Vocab,
@@ -29,6 +32,7 @@ VOCAB_MAP = {
 }
 TEMPLATE_MAP = {
     "CAPITALS": compound_capitals.TEMPLATES,
+    "CAPITALS_ES": compound_capitals_es.TEMPLATES,
     "SHAPES": shapes.TEMPLATES,
     "FRUITS": fruits.TEMPLATES,
     "MCQ_AGNEWS": mcq_agnews.TEMPLATES,

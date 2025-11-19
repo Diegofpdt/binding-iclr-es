@@ -35,9 +35,9 @@ TULU_MODELS = [
 ]
 
 
-def fetch_model(model_tag, device="cuda", num_devices=1, dtype=None):
+def fetch_model(model_tag, device="mps" if torch.backends.mps.is_available() else "cuda" if torch.cuda.is_available() else "cpu", num_devices=1, dtype=None):
     if dtype is None:
-        dtype = torch.float16 if '65b' in model_tag else torch.float32
+        dtype = torch.float16
     print(f'Loading {model_tag} in precision {dtype}')
     torch.set_grad_enabled(False)
     if model_tag in PYTHIA_MODELS:

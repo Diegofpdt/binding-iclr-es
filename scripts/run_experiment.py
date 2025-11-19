@@ -14,7 +14,7 @@ from coref.datasets.api import load_vocab
 def run_factorizability(
     model, prompt_id_start, cache, num_samples=100, entity_width=2, country_width=1, onehop_only=False
 ):
-    vocab_list = ["CAPITALS", "PARALLEL", "SHAPES", "FRUITS", "BIOSBIAS"]
+    vocab_list = ["CAPITALS_ES"]
     additional_template_context = {}
     if onehop_only:
         vocab_list = ['ONEHOP']
